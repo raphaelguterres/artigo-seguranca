@@ -8,7 +8,7 @@
 
 body{
 font-family: Georgia, serif;
-background:#f2f2f2;
+background:#f4f4f4;
 margin:0;
 }
 
@@ -42,8 +42,22 @@ color:#666;
 margin-bottom:25px;
 }
 
-h2{
-margin-top:30px;
+.badge{
+background:#eee;
+padding:6px 10px;
+border-radius:4px;
+margin-right:10px;
+}
+
+.download{
+background:#0a66c2;
+color:white;
+padding:12px 18px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+display:inline-block;
+margin-top:15px;
 }
 
 footer{
@@ -53,11 +67,10 @@ color:#777;
 font-size:14px;
 }
 
-.badge{
-background:#eee;
-padding:6px 10px;
-border-radius:4px;
-margin-right:10px;
+.counter{
+margin-top:20px;
+font-size:14px;
+color:#444;
 }
 
 </style>
@@ -69,9 +82,11 @@ margin-right:10px;
 
 <h1>Revista Brasileira de Segurança Digital</h1>
 
-<p>Publicação acadêmica em segurança da informação</p>
+<p>Publicação acadêmica em Segurança da Informação</p>
 
 <p>ISSN 2965-8871</p>
+
+<p>Volume 3 • Edição 1 • 2026</p>
 
 </header>
 
@@ -90,24 +105,30 @@ Publicado em: 12 de Março de 2026
 
 </div>
 
+<a class="download" href="artigo-seguranca-cibernetica_ABNT.pdf" download>
+⬇ Baixar PDF do artigo
+</a>
+
+<div class="counter">
+Visualizações do artigo: <span id="views">0</span>
+</div>
+
 <h2>Resumo</h2>
 
 <p>
 Com o crescimento da digitalização empresarial, a segurança da informação tornou-se
 um elemento essencial para a proteção de dados corporativos. Pequenas empresas
 frequentemente enfrentam desafios relacionados à implementação de medidas de
-segurança digital, tornando-se alvos vulneráveis de ataques cibernéticos.
-Este artigo apresenta conceitos fundamentais de segurança da informação
-e destaca boas práticas que podem ser aplicadas para reduzir riscos digitais.
+segurança digital. Este artigo apresenta conceitos fundamentais e boas práticas
+para reduzir riscos cibernéticos.
 </p>
 
-<h2>Principais ameaças cibernéticas</h2>
+<h2>Principais ameaças</h2>
 
 <p>
-Entre as ameaças mais comuns enfrentadas por pequenas empresas destacam-se
-ataques de phishing, ransomware, malwares e engenharia social.
-Essas técnicas são utilizadas por criminosos para obter acesso não autorizado
-a sistemas e informações confidenciais.
+Entre as ameaças mais comuns destacam-se ataques de phishing, ransomware,
+malwares e engenharia social. Essas técnicas são utilizadas por criminosos
+para obter acesso não autorizado a sistemas e dados sensíveis.
 </p>
 
 <h2>Boas práticas de segurança</h2>
@@ -117,27 +138,33 @@ a sistemas e informações confidenciais.
 <li>Uso de senhas fortes</li>
 <li>Autenticação em dois fatores</li>
 <li>Atualização constante de softwares</li>
-<li>Utilização de antivírus</li>
-<li>Realização de backups periódicos</li>
+<li>Uso de antivírus</li>
+<li>Backups periódicos</li>
 
 </ul>
 
 <h2>Conclusão</h2>
 
 <p>
-A implementação de políticas básicas de segurança da informação pode reduzir
-significativamente os riscos de incidentes digitais em pequenas empresas.
-Mesmo com recursos limitados, organizações podem adotar medidas simples
-para proteger dados e sistemas contra ameaças cibernéticas.
+A implementação de boas práticas de segurança da informação é essencial
+para proteger dados e sistemas empresariais. Mesmo pequenas empresas podem
+adotar medidas simples que reduzem significativamente os riscos digitais.
 </p>
 
 <h2>Referências</h2>
 
 <p>
-
 STALLINGS, William. Segurança de Redes.<br>
 MITNICK, Kevin. A Arte de Enganar.<br>
 CERT.br – Cartilha de Segurança para Internet.
+</p>
+
+<h2>Como citar este artigo (ABNT)</h2>
+
+<p>
+
+GUTERRES, Raphael. Boas práticas de segurança da informação para pequenas empresas.
+Revista Brasileira de Segurança Digital, v.3, n.1, 2026.
 
 </p>
 
@@ -148,6 +175,22 @@ CERT.br – Cartilha de Segurança para Internet.
 © 2026 Revista Brasileira de Segurança Digital
 
 </footer>
+
+<script>
+
+let views = localStorage.getItem("article_views");
+
+if(!views){
+views = 0;
+}
+
+views++;
+
+localStorage.setItem("article_views", views);
+
+document.getElementById("views").innerText = views;
+
+</script>
 
 </body>
 </html>
