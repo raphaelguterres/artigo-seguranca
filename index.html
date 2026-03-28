@@ -2,195 +2,293 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Revista Brasileira de Segurança Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Artigo Científico - Segurança da Informação</title>
 
 <style>
 
 body{
-font-family: Georgia, serif;
-background:#f4f4f4;
-margin:0;
-}
-
-header{
-background:#111;
-color:white;
-padding:30px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:32px;
-}
-
-header p{
-margin:5px;
-color:#ccc;
+font-family: "Times New Roman", serif;
+line-height:1.8;
+margin:40px;
+color:#000;
+background:#fff;
 }
 
 .container{
 max-width:900px;
-background:white;
-margin:40px auto;
-padding:40px;
-box-shadow:0 0 15px rgba(0,0,0,0.15);
+margin:auto;
 }
 
-.meta{
-color:#666;
-margin-bottom:25px;
+h1{
+text-align:center;
+font-size:26px;
+margin-bottom:40px;
 }
 
-.badge{
-background:#eee;
-padding:6px 10px;
-border-radius:4px;
-margin-right:10px;
+h2{
+font-size:20px;
+margin-top:35px;
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
 }
 
-.download{
-background:#0a66c2;
-color:white;
-padding:12px 18px;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-display:inline-block;
-margin-top:15px;
+p{
+text-align:justify;
+margin-top:10px;
+}
+
+.capa{
+text-align:center;
+margin-bottom:60px;
+}
+
+.capa h1{
+font-size:28px;
+}
+
+.info{
+margin-top:40px;
+text-align:center;
 }
 
 footer{
+margin-top:60px;
 text-align:center;
-padding:20px;
-color:#777;
 font-size:14px;
-}
-
-.counter{
-margin-top:20px;
-font-size:14px;
-color:#444;
+color:#555;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-
-<h1>Revista Brasileira de Segurança Digital</h1>
-
-<p>Publicação acadêmica em Segurança da Informação</p>
-
-<p>ISSN 2965-8871</p>
-
-<p>Volume 3 • Edição 1 • 2026</p>
-
-</header>
-
 <div class="container">
 
-<h1>Boas Práticas de Segurança da Informação para Pequenas Empresas</h1>
+<div class="capa">
 
-<div class="meta">
+<h1>
+ANÁLISE DE BOAS PRÁTICAS DE SEGURANÇA DA INFORMAÇÃO
+APLICADAS A PEQUENAS EMPRESAS
+</h1>
 
-<span class="badge">Artigo científico</span>
+<p>
+Autor: Raphael Pereira Guterres
+</p>
 
-Autor: Raphael Guterres<br>
-Curso: Tecnologia em Defesa Cibernética<br>
-Instituição: UNIFACVEST<br>
-Publicado em: 12 de Março de 2026
+<p>
+Instituição: UNIFACVEST
+</p>
+
+<p>
+Curso: Tecnologia em Defesa Cibernética
+</p>
+
+<p>
+Data: 28/03/2026
+</p>
 
 </div>
 
-<a class="download" href="trabalho_defesa_cibernetica_ABNT.pdf" download>
-⬇ Baixar PDF do artigo
-</a>
-
-<div class="counter">
-Visualizações do artigo: <span id="views">0</span>
-</div>
 
 <h2>Resumo</h2>
 
 <p>
-Com o crescimento da digitalização empresarial, a segurança da informação tornou-se
-um elemento essencial para a proteção de dados corporativos. Pequenas empresas
-frequentemente enfrentam desafios relacionados à implementação de medidas de
-segurança digital. Este artigo apresenta conceitos fundamentais e boas práticas
-para reduzir riscos cibernéticos.
+A segurança da informação tornou-se um fator essencial para a continuidade dos negócios,
+especialmente em pequenas empresas que frequentemente não possuem políticas formais de proteção de dados.
+Este estudo apresenta uma análise das principais boas práticas de segurança da informação aplicáveis a pequenas empresas,
+considerando ameaças cibernéticas atuais, vulnerabilidades comuns e medidas preventivas acessíveis.
+A pesquisa baseia-se em frameworks reconhecidos internacionalmente, como ISO/IEC 27001,
+NIST Cybersecurity Framework e OWASP Top 10, buscando contribuir para a conscientização e redução de riscos digitais.
 </p>
 
-<h2>Principais ameaças</h2>
+
+
+<h2>Introdução</h2>
 
 <p>
-Entre as ameaças mais comuns destacam-se ataques de phishing, ransomware,
-malwares e engenharia social. Essas técnicas são utilizadas por criminosos
-para obter acesso não autorizado a sistemas e dados sensíveis.
+Com o aumento da digitalização dos processos empresariais, a segurança da informação tornou-se um dos pilares fundamentais
+para a proteção de dados organizacionais.
+Pequenas empresas estão cada vez mais conectadas à internet e utilizam sistemas digitais para gestão financeira,
+controle de estoque e comunicação com clientes.
+No entanto, muitas dessas organizações não possuem políticas formais de segurança da informação,
+o que aumenta a exposição a ataques cibernéticos.
 </p>
 
-<h2>Boas práticas de segurança</h2>
+<p>
+A ausência de controles adequados pode resultar em vazamento de dados, perda de informações confidenciais,
+interrupção de serviços e prejuízos financeiros.
+Nesse contexto, torna-se necessário identificar boas práticas de segurança que possam ser implementadas de forma acessível,
+mesmo em ambientes com recursos limitados.
+</p>
 
-<ul>
 
-<li>Uso de senhas fortes</li>
-<li>Autenticação em dois fatores</li>
-<li>Atualização constante de softwares</li>
-<li>Uso de antivírus</li>
-<li>Backups periódicos</li>
 
-</ul>
+<h2>Problema de Pesquisa</h2>
+
+<p>
+Pequenas empresas frequentemente não possuem estrutura técnica especializada para implementar controles avançados
+de segurança da informação, o que aumenta a probabilidade de incidentes cibernéticos.
+A falta de conhecimento sobre riscos digitais pode resultar em ataques de phishing, malware e vazamento de dados sensíveis.
+</p>
+
+<p>
+Dessa forma, surge a necessidade de identificar quais boas práticas de segurança da informação podem ser aplicadas
+de forma eficiente e com baixo custo, contribuindo para a proteção de dados e continuidade das operações empresariais.
+</p>
+
+
+
+<h2>Objetivo</h2>
+
+<p>
+O objetivo deste estudo é analisar boas práticas de segurança da informação aplicáveis a pequenas empresas,
+identificando medidas preventivas contra ataques cibernéticos e estratégias para reduzir vulnerabilidades digitais.
+</p>
+
+
+
+<h2>Metodologia</h2>
+
+<p>
+A metodologia utilizada neste estudo baseia-se em revisão bibliográfica de normas e frameworks reconhecidos
+na área de segurança da informação.
+Foram analisados materiais acadêmicos, artigos científicos e documentos técnicos relacionados a controles de segurança,
+gestão de riscos e proteção de dados organizacionais.
+</p>
+
+<p>
+A pesquisa possui caráter qualitativo e descritivo, com foco na identificação de boas práticas aplicáveis
+a pequenas empresas que possuem limitações de orçamento e infraestrutura tecnológica.
+</p>
+
+
+
+<h2>Fundamentação Teórica</h2>
+
+<p>
+A segurança da informação baseia-se na tríade CID:
+Confidencialidade, Integridade e Disponibilidade.
+Esses princípios garantem que as informações sejam acessadas apenas por usuários autorizados,
+não sejam alteradas indevidamente e estejam disponíveis quando necessário.
+</p>
+
+<p>
+Frameworks como ISO/IEC 27001 e NIST orientam a implementação de controles de segurança para proteger dados organizacionais
+contra ameaças internas e externas.
+O OWASP Top 10 destaca as principais vulnerabilidades em aplicações web, permitindo que empresas identifiquem riscos comuns.
+</p>
+
+
+
+<h2>Principais Ameaças Cibernéticas</h2>
+
+<p>
+Entre as principais ameaças digitais que impactam pequenas empresas destacam-se:
+</p>
+
+<p>
+• Phishing – tentativa de obter dados confidenciais por meio de mensagens fraudulentas.
+</p>
+
+<p>
+• Malware – softwares maliciosos que comprometem sistemas e dados.
+</p>
+
+<p>
+• Ransomware – sequestro de dados mediante pagamento.
+</p>
+
+<p>
+• Engenharia social – manipulação psicológica para obtenção de informações sensíveis.
+</p>
+
+
+
+<h2>Boas Práticas de Segurança</h2>
+
+<p>
+Entre as medidas preventivas recomendadas destacam-se:
+</p>
+
+<p>
+• Utilização de senhas fortes e autenticação em dois fatores.
+</p>
+
+<p>
+• Atualização constante de sistemas e softwares.
+</p>
+
+<p>
+• Backup periódico de dados.
+</p>
+
+<p>
+• Uso de antivírus e firewall.
+</p>
+
+<p>
+• Treinamento de colaboradores sobre segurança digital.
+</p>
+
+
 
 <h2>Conclusão</h2>
 
 <p>
-A implementação de boas práticas de segurança da informação é essencial
-para proteger dados e sistemas empresariais. Mesmo pequenas empresas podem
-adotar medidas simples que reduzem significativamente os riscos digitais.
+A implementação de boas práticas de segurança da informação contribui significativamente
+para a redução de riscos cibernéticos em pequenas empresas.
+Mesmo com recursos limitados, é possível adotar medidas preventivas eficazes que protegem dados organizacionais
+e garantem continuidade das operações.
 </p>
+
+<p>
+A conscientização dos usuários e a adoção de políticas básicas de segurança representam fatores essenciais
+para minimizar vulnerabilidades e fortalecer a proteção da informação.
+</p>
+
+
 
 <h2>Referências</h2>
 
 <p>
-STALLINGS, William. Segurança de Redes.<br>
-MITNICK, Kevin. A Arte de Enganar.<br>
-CERT.br – Cartilha de Segurança para Internet.
+ISO/IEC 27001 – Information Security Management System.
 </p>
-
-<h2>Como citar este artigo (ABNT)</h2>
 
 <p>
-
-GUTERRES, Raphael. Boas práticas de segurança da informação para pequenas empresas.
-Revista Brasileira de Segurança Digital, v.3, n.1, 2026.
-
+NIST Cybersecurity Framework – National Institute of Standards and Technology.
 </p>
 
-</div>
+<p>
+OWASP Top 10 – Open Web Application Security Project.
+</p>
+
+<p>
+STALLINGS, William. Segurança de Redes e Sistemas.
+</p>
+
+<p>
+LAUDON, Kenneth C. Sistemas de Informação Gerenciais.
+</p>
+
+
 
 <footer>
 
-© 2026 Revista Brasileira de Segurança Digital
+<p>
+Artigo acadêmico desenvolvido para fins educacionais.
+</p>
+
+<p>
+Raphael Pereira Guterres – 2026
+</p>
 
 </footer>
 
-<script>
-
-let views = localStorage.getItem("article_views");
-
-if(!views){
-views = 0;
-}
-
-views++;
-
-localStorage.setItem("article_views", views);
-
-document.getElementById("views").innerText = views;
-
-</script>
+</div>
 
 </body>
 </html>
